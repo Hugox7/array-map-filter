@@ -12,8 +12,8 @@ Tableau renvoyé par multiplyOddIndices:
   [3, 8, 11, 39, 19, 35]
 */
 
-function multiplyOddIndices(numbers) {
-  return numbers.map(function(object, index) {
+multiplyOddIndices = numbers => {
+  return numbers.map((object, index) => {
     if (index % 2 === 0) {
        return object 
     } else if (index % 2 === 1) {

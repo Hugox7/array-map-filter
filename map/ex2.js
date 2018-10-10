@@ -42,7 +42,7 @@ En sortie: [
 
  */
 
-function getFoodCategories(foods) {
+/*function getFoodCategories(foods) {
   return foods.map(function(object) {
     if (object.isVegetarian === true) {
       return object.food + " is suitable for vegetarians"
@@ -50,6 +50,16 @@ function getFoodCategories(foods) {
       return object.food + " is not suitable for vegetarians"
     }
 
+  })
+}*/
+
+getFoodCategories = foods => {
+  return foods.map(object => {
+    if (object.isVegetarian === true) {
+      return object.food + " is suitable for vegetarians"
+    } else {
+      return object.food + " is not suitable for vegetarians"
+    }
   })
 }
 

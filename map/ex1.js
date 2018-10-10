@@ -21,8 +21,14 @@ En sortie: [
 
  */
 
-function getStringsLength(strings) {
+/*function getStringsLength(strings) {
   return strings.map(function(string) {
+    return string + " contains " + string.length + " characters"
+  })
+}*/
+
+getStringsLength = strings => {
+  return strings.map(string => {
     return string + " contains " + string.length + " characters"
   })
 }

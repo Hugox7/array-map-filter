@@ -59,8 +59,8 @@ En sortie:
 
  */
 
-function getMoviesFreshness(movies) {
-    movies.map(function(movie) {
+getMoviesFreshness = movies => {
+    movies.map(movie => {
     if (movie.rating > 0 && movie.rating < 60) {
         movie.label = "rotten"
     }
@@ -74,6 +74,24 @@ function getMoviesFreshness(movies) {
   return movies
 }
 
+console.log(getMoviesFreshness([
+  {
+    name: 'Crazy Rich Asians',
+    rating: 93
+  },
+  {
+    name: 'Skyscraper',
+    rating: 46
+  },
+  {
+    name: 'Leave No Trace',
+    rating: 100
+  },
+  {
+    name: 'White Boy Rick',
+    rating: 60
+  }
+]))
 
 
 // Ne pas modifier l'export
